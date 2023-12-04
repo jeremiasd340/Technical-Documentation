@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Technical Documentation</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <header class="header-nav">Documentation</header>
+        <hr>
+        <a class="nav-link" href="#HTML_and_CSS">HTML and CSS</a>
+        <hr>
+        <a class="nav-link" href="#JavaScript_and_Java">JavaScript and Java</a>
+        <hr>
+        <a class="nav-link" href="#Python_and_Ruby">Python and Ruby</a>
+        <hr>
+        <a class="nav-link" href="#React_and_Angular">React and Angular</a>
+        <hr>
+        <a class="nav-link" href="#APIs">APIs</a>
+        <hr>
+    </nav>
+
+    <main id="main-doc">
+        <section id="HTML_and_CSS" class="main-section">
+            <header>
+                <h2>HTML and CSS</h2>
+            </header>
+            <p>HTML (HyperText Markup Language) is the standard markup language for creating web pages and web
+                applications.</p>
+            <p>CSS (Cascading Style Sheets) is a style sheet language used for describing the look and formatting of a
+                document written in HTML.</p>
+            <code>
+                <!-- Example HTML code -->
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                &lt;head&gt;
+                &lt;title&gt;My Website&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                &lt;h1&gt;Hello, World!&lt;/h1&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+            </code>
+            <code>
+                /* Example CSS code */
+                body {
+                    font-family: Arial, sans-serif;
+                    background-color: #f0f0f0;
+                }
+                h1 {
+                    color: #333;
+                }
+            </code>
+            <li>HTML is used to structure content on the web.</li>
+            <li>CSS is used to style the presentation of the content.</li>
+        </section>
+
+        <section id="JavaScript_and_Java" class="main-section">
+            <header>
+                <h2>JavaScript and Java</h2>
+            </header>
+            <p>JavaScript is a high-level, interpreted programming language that is widely used to make web pages
+                interactive.</p>
+            <p>Java, on the other hand, is a versatile, object-oriented programming language used for building various
+                types of applications.</p>
+            <code>
+                // Example JavaScript code
+                function greet(name) {
+                    return "Hello, " + name + "!";
+                }
+                console.log(greet("World"));
+            </code>
+            <code>
+                // Example Java code
+                public class HelloWorld {
+                    public static void main(String[] args) {
+                        System.out.println("Hello, World!");
+                    }
+                }
+            </code>
+            <li>JavaScript is primarily used for front-end web development.</li>
+            <li>Java is known for its portability and is used in a wide range of applications, including mobile and
+                enterprise development.</li>
+        </section>
+
+
+        <section id="Python_and_Ruby" class="main-section">
+            <header>
+                <h2>Python and Ruby</h2>
+            </header>
+            <p>Python is a high-level, general-purpose programming language known for its readability and versatility.
+                It is widely used in web development, data analysis, artificial intelligence, and more.</p>
+            <p>Ruby is a dynamic, object-oriented programming language designed for simplicity and productivity. It is
+                often used in web development, particularly with the Ruby on Rails framework.</p>
+            <code>
+                # Example Python code
+                def greet(name):
+                    return "Hello, " + name + "!"
+        
+                print(greet("World"))
+            </code>
+            <code>
+                # Example Ruby code
+                def greet(name)
+                    "Hello, #{name}!"
+                end
+        
+                puts greet("World")
+            </code>
+            <li>Python is known for its clear syntax and readability, making it a great language for beginners.</li>
+            <li>Ruby emphasizes developer happiness and follows the principle of convention over configuration.</li>
+        </section>
+
+
+        <section id="React_and_Angular" class="main-section">
+            <header>
+                <h2>React and Angular</h2>
+            </header>
+            <p>React is a JavaScript library for building user interfaces. It is maintained by Facebook and a community
+                of individual developers and companies.</p>
+            <p>Angular is a TypeScript-based web application framework developed by Google. It is a complete rewrite of
+                AngularJS and is widely used for building dynamic, single-page applications.</p>
+            <code>
+                // Example React code
+                import React from 'react';
+        
+                const App = () => {
+                    return (
+                        <div>
+                            <h1>Hello, React!</h1>
+                        </div>
+                    );
+                };
+        
+                export default App;
+            </code>
+            <code>
+                // Example Angular code
+                import { Component } from '@angular/core';
+        
+                @Component({
+                    selector: 'app-root',
+                    template: '<h1>Hello, Angular!</h1>',
+                })
+                export class AppComponent {}
+            </code>
+            <li>React is known for its virtual DOM and component-based architecture, making it efficient for building
+                UIs.</li>
+            <li>Angular provides a comprehensive framework for building large-scale applications with features like
+                two-way data binding and dependency injection.</li>
+        </section>
+
+
+        <section id="APIs" class="main-section">
+            <header>
+                <h2>APIs</h2>
+            </header>
+            <p>An API (Application Programming Interface) allows different software applications to communicate and
+                interact with each other. It defines the methods and data formats that applications can use to request
+                and exchange information.</p>
+            <p>APIs play a crucial role in modern web development, enabling the integration of different services,
+                platforms, and technologies.</p>
+            <code>
+                // Example API request with JavaScript using fetch
+                fetch('https://api.example.com/data')
+                    .then(response => response.json())
+                    .then(data => console.log(data))
+                    .catch(error => console.error('Error:', error));
+            </code>
+            <code>
+                <!-- Example API endpoint in a web service -->
+                GET /api/data
+            </code>
+            <li>APIs can be used to access data, services, or functionality provided by external applications or
+                services.</li>
+            <li>Developers use APIs to enable the integration of their applications with third-party services or to
+                create modular and scalable software architectures.</li>
+        </section>
+
+    </main>
+</body>
+
+</html>
